@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Khalel Abaquin
+   Date: 11.9.18
+	
+   Filename: br_styles.css
+
+*/
+
+html {
+    /* max-width: 960px;
+    min-width: 640px;
+    max-height: 1080px;
+    min-height: 960px;
+    background-color: bisque;
+    height: 100%; */
+    /* text-align: center; */
+    height: 330%;
+    /* background-color: bisque; */
+    width: 100%;
+    margin: auto;
+    background-image: url(br_paper.png);
+    background-attachment: fixed;
+}
+
+body header {
+    background-image: url(br_logo.png);
+    height: 9%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(45, 45, 85);
+    border-bottom: 1px solid rgb(45, 45, 85);
+
+}
+
+nav ul li a:hover {
+    color: aqua;
+}
+
+body nav ul li {
+    float: left;
+    width: 20%;
+    background-color: rgb(45, 45, 85);
+    text-align: center;
+    box-shadow: rgb(26, 25, 25) 0px 0px 25px;
+}
+
+nav ul li a {
+    color: aliceblue;
+}
+
+body {
+    height: 100%;
+    width: 80%;
+    background-color: rgb(146, 64, 64);
+    margin: auto;
+    border: 1px solid rgb(45, 45, 85);
+    box-shadow: rgb(26, 25, 25) 0px 0px 25px;
+
+}
