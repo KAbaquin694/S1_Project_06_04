@@ -18,7 +18,7 @@
 /* This block of code stylizes the gneral look of the webpage,,suchas the height, width, & color. */
 
 html {
-    height: 210%;
+    height: 260%;
     width: 100%;
     margin: auto;
     background-image: url(br_paper.png);
@@ -27,19 +27,21 @@ html {
 
 body header {
     background-image: url(br_logo.png);
-    height: 9%;
+    background-size: cover;
+    height: 10%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgb(72, 72, 90);
     border-bottom: 1px solid rgb(45, 45, 85);
+
 }
 
 body {
-    height: 89%;
+    height: 99%;
     width: 80%;
     background-color: rgb(40, 44, 56);
     margin: auto;
-    border: 1px solid rgb(45, 45, 85);
+    border: 1px solid rgb(40, 44, 56);
     box-shadow: rgb(26, 25, 25) 0px 0px 25px;
 }
 
@@ -72,17 +74,19 @@ nav ul li a {
 div.group1 {
     float: left;
     padding: 38px;
-    transform: rotateZ(5deg);
+    transform: rotateZ(3deg);
 }
 
 div.group2 {
     float: left;
     padding: 38px;
-    transform: rotateZ(-5deg);
+    transform: rotateZ(-3deg);
 }
 
 div.group3 {
-    text-align: center;
+    float: left;
+    padding: 38px;
+    transform: rotateZ(3deg);
 }
 
 div img {
@@ -96,48 +100,79 @@ p.views {
     text-shadow: 0 0 5px rgb(197, 188, 188);
 }
 
+div::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 /* Description */
 
 /* This code gives the list in the middle a border & styles said border with rounded corners. */
 
+/* ul#bottomList {
+    margin: auto;
+} */
+
 ul#bottomList li {
     color: rgb(187, 194, 201);
-    width: 50%;
+    /* width: 50%; */
+    font-size: 1.2em;
     text-align: center;
     margin: auto;
     padding: 50px;
     border: 2px solid rgb(12, 12, 12);
     border-radius: 25px;
     border-color: rgb(187, 194, 201);
-    
+}
+
+ul#bottomList li#item1 {
+    float: left;
+}
+
+ul#bottomList li#item2 {
+    float: left;
+}
+
+ul#bottomList li#item3 {
+    float: left;
 }
 
 /* Middle Nav Bar */
 
 /* This block of code styles the links in the middle of the page. */
 
+
+/* ul#midList {
+    padding-bottom: 15px;
+} */
+
 ul li.midLeft {
     float: left;
-        padding-left: 30px;
+    /* padding-left: 30px;
+    padding-bottom: 10px; */
+    padding: 20px 0px 20px 30px;
 }
 
 ul li.midRight {
     float: right;
-        padding-right: 30px;
+    /* padding-right: 30px;
+    padding-bottom: 10px; */
+    padding: 20px 30px 20px 0px;
 }
 
-ul li.midRight a{
+ul li.midRight a {
     color: rgb(187, 194, 201);
     text-decoration: none;
     padding-left: 0px;
-        text-shadow: 0 0 5px rgb(197, 188, 188);
+    text-shadow: 0 0 5px rgb(197, 188, 188);
 }
 
-ul li.midLeft a{
+ul li.midLeft a {
     color: rgb(187, 194, 201);
     text-decoration: none;
     padding-right: 0px;
-        text-shadow: 0 0 5px rgb(197, 188, 188);
+    text-shadow: 0 0 5px rgb(197, 188, 188);
 }
 
 ul li.midLeft a:hover {
@@ -152,14 +187,14 @@ ul li.midRight a:hover {
 
 /* This section styles the footer. */
 
-p#right {
-        color: rgb(187, 194, 201);
+footer p#right {
+    color: rgb(187, 194, 201);
     float: right;
     padding-right: 10px;
 }
 
-p#left {
-        color: rgb(187, 194, 201);
+footer p#left {
+    color: rgb(187, 194, 201);
     float: left;
     padding-left: 10px;
 }
