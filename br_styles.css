@@ -13,16 +13,12 @@
 
 */
 
+/* General */
+
+/* This block of code stylizes the gneral look of the webpage,,suchas the height, width, & color. */
+
 html {
-    /* max-width: 960px;
-    min-width: 640px;
-    max-height: 1080px;
-    min-height: 960px;
-    background-color: bisque;
-    height: 100%; */
-    /* text-align: center; */
-    height: 330%;
-    /* background-color: bisque; */
+    height: 210%;
     width: 100%;
     margin: auto;
     background-image: url(br_paper.png);
@@ -34,33 +30,136 @@ body header {
     height: 9%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(45, 45, 85);
+    background-color: rgb(72, 72, 90);
     border-bottom: 1px solid rgb(45, 45, 85);
-
 }
 
+body {
+    height: 89%;
+    width: 80%;
+    background-color: rgb(40, 44, 56);
+    margin: auto;
+    border: 1px solid rgb(45, 45, 85);
+    box-shadow: rgb(26, 25, 25) 0px 0px 25px;
+}
+
+/* Navigation Bar */
+
+/* This section of code styles the navigation bar by giving it color, shadows, & width. */
+
 nav ul li a:hover {
-    color: aqua;
+    color: rgb(255, 255, 255);
 }
 
 body nav ul li {
     float: left;
     width: 20%;
-    background-color: rgb(45, 45, 85);
+    background-color: rgb(72, 72, 90);
     text-align: center;
-    box-shadow: rgb(26, 25, 25) 0px 0px 25px;
+    box-shadow: rgb(12, 12, 12) 0px 0px 25px;
 }
 
 nav ul li a {
-    color: aliceblue;
+    color: rgb(187, 194, 201);
+    text-shadow: 0 0 5px rgb(197, 188, 188);
+
 }
 
-body {
-    height: 100%;
-    width: 80%;
-    background-color: rgb(146, 64, 64);
-    margin: auto;
-    border: 1px solid rgb(45, 45, 85);
-    box-shadow: rgb(26, 25, 25) 0px 0px 25px;
+/* Pictures */
 
+/* This piece of code styles the pictures & the text within the div elements via transformations, shadows, & text color. */
+
+div.group1 {
+    float: left;
+    padding: 38px;
+    transform: rotateZ(5deg);
+}
+
+div.group2 {
+    float: left;
+    padding: 38px;
+    transform: rotateZ(-5deg);
+}
+
+div.group3 {
+    text-align: center;
+}
+
+div img {
+    box-shadow: 0px 10px 30px rgb(26, 25, 25);
+    filter: drop-shadow(10px 10px 5px gray);
+}
+
+p.views {
+    color: rgb(187, 194, 201);
+    text-align: center;
+    text-shadow: 0 0 5px rgb(197, 188, 188);
+}
+
+/* Description */
+
+/* This code gives the list in the middle a border & styles said border with rounded corners. */
+
+ul#bottomList li {
+    color: rgb(187, 194, 201);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 25px;
+    border-color: rgb(187, 194, 201);
+    
+}
+
+/* Middle Nav Bar */
+
+/* This block of code styles the links in the middle of the page. */
+
+ul li.midLeft {
+    float: left;
+        padding-left: 30px;
+}
+
+ul li.midRight {
+    float: right;
+        padding-right: 30px;
+}
+
+ul li.midRight a{
+    color: rgb(187, 194, 201);
+    text-decoration: none;
+    padding-left: 0px;
+        text-shadow: 0 0 5px rgb(197, 188, 188);
+}
+
+ul li.midLeft a{
+    color: rgb(187, 194, 201);
+    text-decoration: none;
+    padding-right: 0px;
+        text-shadow: 0 0 5px rgb(197, 188, 188);
+}
+
+ul li.midLeft a:hover {
+    color: rgb(255, 255, 255);
+}
+
+ul li.midRight a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Footer */
+
+/* This section styles the footer. */
+
+p#right {
+        color: rgb(187, 194, 201);
+    float: right;
+    padding-right: 10px;
+}
+
+p#left {
+        color: rgb(187, 194, 201);
+    float: left;
+    padding-left: 10px;
 }
